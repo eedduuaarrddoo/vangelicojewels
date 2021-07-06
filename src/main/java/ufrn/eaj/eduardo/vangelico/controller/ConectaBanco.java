@@ -9,7 +9,7 @@ import java.sql.SQLException;
 
 public class ConectaBanco {
 
-    static Connection getConnection() throws URISyntaxException, SQLException {
+    public static Connection getConnection() throws URISyntaxException, SQLException {
         String dbUri = System.getenv("DATABASE_HOST");
         String dbPort = System.getenv("DATABASE_PORT");
         String dbName = System.getenv("DATABASE_NAME");
